@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { formatDate } from 'common'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         >
           Learn React
         </a>
+        <p>現在の時間: {formatDate(new Date())}</p>
       </header>
     </div>
   );
