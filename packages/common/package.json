@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/matometaru/my-monorepo/issues"
   },
-  "homepage": "https://github.com/matometaru/my-monorepo#readme"
+  "homepage": "https://github.com/matometaru/my-monorepo#readme",
+  "dependencies": {
+    "date-fns": "^2.30.0"
+  }
 }
