@@ -11,8 +11,7 @@
       ],
       "predeploy": [
         "npm run prebuild:common",
-        "npm run build -w functions",
-        "pwd"
+        "npm run build -w functions"
       ]
     }
   ],
