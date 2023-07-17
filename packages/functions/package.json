@@ -12,6 +12,7 @@
   "main": "lib/index.js",
   "private": true,
   "dependencies": {
+    "common": "file:common-1.0.0.tgz",
     "firebase-admin": "^11.10.1",
     "firebase-functions": "^4.4.1"
   }
