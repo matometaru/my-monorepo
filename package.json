@@ -42,7 +42,8 @@
     ]
   },
   "workspaces": [
-    "packages/common"
+    "packages/common",
+    "packages/functions"
   ],
   "devDependencies": {
     "@craco/craco": "^7.1.0"
