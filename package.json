@@ -21,7 +21,8 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "deploy:hosting": "npm run build && firebase deploy --only hosting"
+    "deploy:hosting": "npm run build && firebase deploy --only hosting",
+    "serve:functions": "npm run serve -w packages/functions"
   },
   "eslintConfig": {
     "extends": [
