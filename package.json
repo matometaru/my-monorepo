@@ -21,10 +21,8 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "build:common": "npm run build -w packages/common",
     "deploy:hosting": "npm run build && firebase deploy --only hosting",
-    "prebuild:common": "cd packages/common && tsc && npm pack && mv *.tgz ../functions",
-    "serve:functions": "npm run prebuild:common && npm run serve -w packages/functions",
+    "serve:functions": "npm run build -w packages/common && npm run serve -w packages/functions",
     "deploy:functions": "npm run deploy -w packages/functions"
   },
   "eslintConfig": {

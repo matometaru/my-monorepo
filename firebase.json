@@ -10,8 +10,14 @@
         "firebase-debug.*.log"
       ],
       "predeploy": [
-        "npm run prebuild:common",
+        "npm run build -w packages/common",
+        "npm pack -w packages/common && mv *.tgz packages/functions",
+        "cd packages/functions && npm i ./common-1.0.0.tgz",
         "npm run build -w functions"
+      ],
+      "postdeploy": [
+        "npm -w packages/functions remove common",
+        "echo 'deploy completed!!'"
       ]
     }
   ],
